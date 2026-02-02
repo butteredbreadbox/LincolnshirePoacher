@@ -13,7 +13,6 @@ https://butteredbreadbox.github.io/LincolnshirePoacher/
 - no tick counter
 - no credits
 - amber text
-- ~~can run completely offline~~ not yet (have to figure out why it doesn't work when using as a standalone file)
 - cleaned up and reworded
 
 
