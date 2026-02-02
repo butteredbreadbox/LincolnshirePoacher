@@ -12,7 +12,7 @@ https://butteredbreadbox.github.io/LincolnshirePoacher/
 - no more theme selector
 - no tick counter
 - no credits
-- amber text
+- amber orange
 - cleaned up and reworded
 
 
