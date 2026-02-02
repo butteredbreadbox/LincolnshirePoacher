@@ -13,9 +13,9 @@
     margin: 3rem auto;
     padding: 2rem;
     background: rgba(20, 20, 20, 0.95);
-    border: 2px solid #555;
+    border: 2px solid #F05211;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 20px rgba(240, 82, 17, 0.25);
 }
 h1, .subtitle {
     font-family: 'Alata', sans-serif;
