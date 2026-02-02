@@ -38,9 +38,9 @@ h1 {
     padding: 1rem;
     height: 300px;
     overflow-y: scroll;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     font-size: 0.95rem;
-    color: #00ff88;
+    color: #F05211;
     white-space: pre-wrap;
 }
 
@@ -55,8 +55,8 @@ h1 {
 button {
     font-family: 'Special Elite', monospace;
     background-color: #222;
-    border: 1px solid #00ff88;
-    color: #00ff88;
+    border: 1px solid #F05211;
+    color: #F05211;
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
     cursor: pointer;
@@ -65,7 +65,7 @@ button {
 }
 
     button:hover {
-        background-color: #00ff88;
+        background-color: #F05211;
         color: #000;
     }
 
@@ -96,7 +96,7 @@ button {
 
 /* Typing animation and blinking caret */
 .console .line.typing {
-    border-right: 2px solid #00ff88;
+    border-right: 2px solid #F05211;
     animation: blink-caret 0.75s step-end infinite;
 }
 
@@ -106,21 +106,10 @@ button {
     }
 
     50% {
-        border-color: #00ff88;
+        border-color: #F05211;
     }
 }
 
-/* Theme toggle icon */
-.theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2.2rem;
-    cursor: pointer;
-    z-index: 1000;
-    user-select: none;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
 
     .theme-toggle:hover {
         transform: scale(1.15);

@@ -1,4 +1,4 @@
-﻿const staticAudio = document.getElementById("static");
+const staticAudio = document.getElementById("static");
 const stopBtn = document.getElementById("stopBtn");
 const consoleOutput = document.getElementById("console");
 const themeToggleIcon = document.getElementById("themeToggleIcon");
@@ -129,16 +129,11 @@ async function typeLine(text) {
 function showIdleCursor() {
   const cursor = document.createElement("div");
   cursor.className = "line typing";
-  cursor.textContent = "> Press Enter to Start Transmission";
+  cursor.textContent = "Press Start or Enter to Start Transmission.";
   consoleOutput.appendChild(cursor);
   consoleOutput.scrollTop = consoleOutput.scrollHeight;
 }
 
-// 🌙 / ☀️ Theme toggle icon logic
-themeToggleIcon.addEventListener("click", () => {
-  const isBunker = document.body.classList.toggle("bunker");
-  themeToggleIcon.textContent = isBunker ? "☀️" : "🌙";
-});
 
 // Stop button remains visible and works
 stopBtn.addEventListener("click", () => {
@@ -157,7 +152,6 @@ async function startTransmission() {
   await preloadSounds();
 
   log(">>> Lincolnshire Poacher Transmission Initiated");
-  log(">>> WARNING: This emulator is for educational and entertainment purposes only.");
   await wait(2000);
 
   const agentId = generateGroup();
@@ -192,24 +186,6 @@ async function startTransmission() {
 
 window.addEventListener("DOMContentLoaded", async () => {
   await wait(1000);
-  await log("control login:");
-  await wait(1000);
-
-  const userId = "user" + Math.floor(Math.random() * 9000 + 1000);
-  await log("> " + userId);
-  await wait(500);
-
-  const password = "*".repeat(8 + Math.floor(Math.random() * 4));
-  await log("> " + password);
-  await wait(700);
-
-  await log("> ...");
-  await wait(800);
-
-  await log("Access Granted.");
-  await wait(1000);
-
-  await log("Press Enter to Turn on Transmitter");
 });
 
 document.addEventListener("keydown", (e) => {
@@ -227,19 +203,11 @@ document.addEventListener("keydown", (e) => {
 });
 
 async function handleTransmitterInit() {
-  await log("Transmitter Initialising...");
+  await log(">>> Transmitter Initialising...");
   fadeAudio(staticAudio, 'in', 3000);
   await wait(5000);
   document.getElementById("mainControls").style.display = "flex";
   await log("Ready.");
   showIdleCursor();
 }
-// Toggle info dropdown
-document.addEventListener("DOMContentLoaded", () => {
-  const infoToggle = document.querySelector(".info-toggle");
-  const infoContent = document.getElementById("e03Info");
 
-  infoToggle.addEventListener("click", () => {
-    infoContent.style.display = infoContent.style.display === "block" ? "none" : "block";
-  });
-});
