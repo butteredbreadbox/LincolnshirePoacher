@@ -1,3 +1,24 @@
+# LincolnshirePoacher
+this is a simulator of the Lincolnshire Poacher numbers station that lasted between ~mid 1970s - 2008
+
+this is a fork of the [LincolnshirePoacherWeb](https://github.com/cjfranko/LincolnshirePoacherWeb) emulator/simulator
+
+https://butteredbreadbox.github.io/LincolnshirePoacher/
+
+## List of Changes
+- no more "educational and entertainment purposes" disclaimer
+- no more simulated login
+- no more info section
+- no more theme selector
+- no tick counter
+- no credits
+- amber text
+- ~~can run completely offline~~ not yet (have to figure out why it doesn't work when using as a standalone file)
+- cleaned up and reworded
+
+
+# Original README
+```
 Welcome to the E03 - The Lincolnshire Poacher Emulator
 
 "When I was bound apprentice in famous Lincolnshire,
@@ -16,3 +37,4 @@ This emulator was created as a bit of fun to cast light on the mysterious world 
 More information about numbers stations can be found at priyom.org.
 
 Audio extracted from recordings from the Conet Project: https://soundcloud.com/the-conet-project/sets/the-conet-project
+```
