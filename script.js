@@ -11,6 +11,8 @@ let transmitterPoweredOn = false;
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const audioBuffers = { digits: {}, lifted: {}, ding: null, dong: null, tune: null };
 
+// figure out how to make this point to a local file instead of a url
+
 async function loadAudioBuffer(url) {
   const response = await fetch(url);
   const arrayBuffer = await response.arrayBuffer();
@@ -209,5 +211,6 @@ async function handleTransmitterInit() {
   await log("Ready.");
   showIdleCursor();
 }
+
 
 
