@@ -16,6 +16,15 @@ https://butteredbreadbox.github.io/LincolnshirePoacher/
 - cleaned up and reworded
 
 
+## Running
+### Option 1
+https://butteredbreadbox.github.io/LincolnshirePoacher/
+### Option 2
+you will require a web server for this (the Python3 HTTP Server will be used for this)
+1. Download by clicking `Code` and then `Download ZIP`
+2. Open a terminal window and run `python3 -m http.server`
+3. Open http://127.0.0.1:8000 in a web browser
+
 # Original README
 ```
 Welcome to the E03 - The Lincolnshire Poacher Emulator
