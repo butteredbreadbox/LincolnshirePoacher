@@ -35,6 +35,7 @@
     <div class="container">
         <h1>Lincolnshire Poacher Simulator</h1>
 
+        <!-- i don't know how to add spacing in html sorry -->
         <p align="center">&nbsp;</p>
 
         <div id="console" class="console"></div>
@@ -53,17 +54,13 @@
     <script src="script.js"></script>
     <script>
     // Touch-friendly Enter button logic
+    // turns out it does more than touch so i can't remove all of this and say "fuck you mobile users"
     document.addEventListener("DOMContentLoaded", () => {
       const startBtn = document.getElementById("startBtn");
 
       startBtn.addEventListener("click", () => {
         const cursor = document.querySelector(".line.typing");
         if (cursor) cursor.remove();
-
-        if (typeof transmitterPoweredOn === "undefined" || typeof transmissionStarted === "undefined") {
-          console.warn("Transmission state not ready. Try again in a moment.");
-          return;
-        }
 
         if (!transmitterPoweredOn) {
           transmitterPoweredOn = true;

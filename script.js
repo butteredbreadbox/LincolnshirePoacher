@@ -1,7 +1,6 @@
 const staticAudio = document.getElementById("static");
 const stopBtn = document.getElementById("stopBtn");
 const consoleOutput = document.getElementById("console");
-const themeToggleIcon = document.getElementById("themeToggleIcon");
 
 let messageLog = "";
 let shouldStop = false;
@@ -17,6 +16,8 @@ async function loadAudioBuffer(url) {
   const arrayBuffer = await response.arrayBuffer();
   return await audioContext.decodeAudioData(arrayBuffer);
 }
+
+// todo: figure out why this doesn't work when running locally and why you need a html server to run it
 
 async function preloadSounds() {
   for (let i = 0; i <= 9; i++) {
