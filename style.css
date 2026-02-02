@@ -6,8 +6,6 @@
     transition: background 0.5s, color 0.5s;
 }
 
-/* todo: figure out which thing here makes the borders glow green and replace it with #F05211 */
-
 .container {
     max-width: 800px;
     margin: 3rem auto;
