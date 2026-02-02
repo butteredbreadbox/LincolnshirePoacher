@@ -17,8 +17,6 @@ async function loadAudioBuffer(url) {
   return await audioContext.decodeAudioData(arrayBuffer);
 }
 
-// todo: figure out why this doesn't work when running locally and why you need a html server to run it
-
 async function preloadSounds() {
   for (let i = 0; i <= 9; i++) {
     audioBuffers.digits[i] = await loadAudioBuffer(`audio/${i}.wav`);
@@ -211,4 +209,5 @@ async function handleTransmitterInit() {
   await log("Ready.");
   showIdleCursor();
 }
+
 
